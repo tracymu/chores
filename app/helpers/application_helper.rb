@@ -1,10 +1,9 @@
 module ApplicationHelper
   def background_color(chore)
-    @chore = chore
     case 
-    when days_passed <  chore.frequency
+    when days_passed(chore) <  chore.frequency
       'green'
-    when days_passed <= (chore.frequency * 1.25 )
+    when days_passed(chore) <= (chore.frequency * 1.25 )
       'orange'
     else
       'red'
@@ -12,10 +11,17 @@ module ApplicationHelper
   end
   
   def days_since_done(chore)
-    days_passed.to_i
+    case days_passed(chore)
+    when 0
+      'Done today!'
+    when 1
+      'Done yesterday'
+    else
+      "#{days_passed(chore).to_i} days ago"
+    end
   end
   
-  def days_passed
-    Date.today - @chore.last_done
+  def days_passed(chore)
+    Date.today - chore.last_done
   end
 end

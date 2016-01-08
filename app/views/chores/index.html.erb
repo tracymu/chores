@@ -1,9 +1,9 @@
 <ul>
   <% @chores.each do |chore| %>
-    <li class=<%= background_color(chore) %> >
+    <li class=<%= background_color(chore) %> data-id=<%= chore.id %> >
       <%= chore %>
       <p>
-        <%= days_since_done(chore) %> days ago
+        <%= days_since_done(chore) %>
       </p>
     </li>
   <% end %>
