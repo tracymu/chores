@@ -10,3 +10,11 @@ Media queries
 To choose colours I looked for any 'traffic light' type schemes in here
 https://designschool.canva.com/blog/100-color-combinations/
 
+Future:
+ - Style the rest of page
+ - Add form for adding chores
+ - Add users/devise
+ - Add a property - a property has many chores and many users
+ - Users page to show who did the most, or who did what last
+ - Eventually might want 'history' of who did the chore. i.e. users_chores table with a count?
+ - How to make into a mobile app
