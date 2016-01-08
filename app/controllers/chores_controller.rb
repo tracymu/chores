@@ -4,7 +4,7 @@ class ChoresController < ApplicationController
   end
   
   def ordered_chores
-    "SELECT *, ((julianday('now') - julianday(last_done)) / frequency) AS priority from chores order by priority desc"
+    "SELECT *, ((SELECT current_date - last_done )/ (frequency * 1.25)) AS priority from chores order by priority desc"
   end
   
   def update

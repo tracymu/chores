@@ -3,7 +3,7 @@ module ApplicationHelper
     case 
     when days_passed(chore) <  chore.frequency
       'green'
-    when days_passed(chore) < (chore.frequency * 1.25 )
+    when days_passed(chore) <= (chore.frequency * 1.25 )
       'orange'
     else
       'red'
@@ -22,6 +22,6 @@ module ApplicationHelper
   end
   
   def days_passed(chore)
-    Date.today - chore.last_done
+    (Date.today - chore.last_done).to_i
   end
 end
