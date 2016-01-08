@@ -1,8 +1,8 @@
 Chore.destroy_all
 
-Chore.create({title: 'Vacuum living areas', frequency: 7, last_done: Date.today - 20})
+Chore.create({title: 'Vacuum living areas', frequency: 7, last_done: Date.today - 9})
 Chore.create({title: 'Vacuum bedroom', frequency: 7, last_done: Date.today - 1})
-Chore.create({title: 'Vacuum spare room', frequency: 14, last_done: Date.today - 7})
+Chore.create({title: 'Vacuum spare room', frequency: 14, last_done: Date.today - 15})
 Chore.create({title: 'Change sheets', frequency: 14, last_done: Date.today - 7})
 Chore.create({title: 'Mop floors', frequency: 30, last_done: Date.today - 40})
 Chore.create({title: 'Kitchen surfaces', frequency: 4, last_done: Date.today - 8})

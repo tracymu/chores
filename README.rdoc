@@ -10,8 +10,13 @@ Media queries
 To choose colours I looked for any 'traffic light' type schemes in here
 https://designschool.canva.com/blog/100-color-combinations/
 
+Available at https://immense-journey-9938.herokuapp.com/
+
 Future:
+ - Order by ???
+ - What 
  - Style the rest of page
+ - There is a very annoying webkit padding of 40px on the ul
  - Add form for adding chores
  - Add users/devise
  - Add a property - a property has many chores and many users
