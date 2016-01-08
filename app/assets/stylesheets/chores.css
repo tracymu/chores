@@ -1,5 +1,8 @@
-@media (max-width: 480px) {
-  li {
+@media (min-width: 680px) {
+  ul {
+    max-width: 50%px;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }
 
@@ -9,7 +12,7 @@ ul {
 
 li {
   text-align: center;
-  height: 2em;
+  height: 4em;
   background-color: #5bc8ac;
   padding: 0.5em 0.5em;
   margin: 0.5em 0.5em;
