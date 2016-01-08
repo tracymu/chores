@@ -3,7 +3,7 @@ module ApplicationHelper
     case 
     when days_passed(chore) <  chore.frequency
       'green'
-    when days_passed(chore) <= (chore.frequency * 1.25 )
+    when days_passed(chore) < (chore.frequency * 1.25 )
       'orange'
     else
       'red'

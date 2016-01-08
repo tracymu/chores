@@ -1,6 +1,10 @@
 class ChoresController < ApplicationController
   def index
-    @chores = Chore.all
+    @chores = Chore.find_by_sql(ordered_chores)
+  end
+  
+  def ordered_chores
+    "SELECT *, ((julianday('now') - julianday(last_done)) / frequency) AS priority from chores order by priority desc"
   end
   
   def update

@@ -1,11 +1,6 @@
 Aim of this project
 
-Practise some Javascript and CSS
-Used:
-CSS
-Coffeescript
-Ajax
-Media queries
+Practise some CSS, Coffeescript, Ajax. Also ended up learning about some SQL.
 
 To choose colours I looked for any 'traffic light' type schemes in here
 https://designschool.canva.com/blog/100-color-combinations/
@@ -13,8 +8,6 @@ https://designschool.canva.com/blog/100-color-combinations/
 Available at https://immense-journey-9938.herokuapp.com/
 
 Future:
- - Order by ???
- - What 
  - Style the rest of page
  - Add form for adding chores
  - Add users/devise
