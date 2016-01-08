@@ -16,7 +16,6 @@ Future:
  - Order by ???
  - What 
  - Style the rest of page
- - There is a very annoying webkit padding of 40px on the ul
  - Add form for adding chores
  - Add users/devise
  - Add a property - a property has many chores and many users
