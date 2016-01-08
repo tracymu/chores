@@ -1,6 +1,6 @@
 <ul>
   <% @chores.each do |chore| %>
-    <li onclick="paintIt(this, '#990000', 'blue')" class=<%= background_color(chore) %> >
+    <li class=<%= background_color(chore) %> >
       <%= chore %>
       <p>
         <%= days_since_done(chore) %> days ago
