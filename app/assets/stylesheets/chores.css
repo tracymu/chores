@@ -1,0 +1,31 @@
+@media (max-width: 480px) {
+  li {
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-align: center;
+  height: 2em;
+  background-color: #5bc8ac;
+  padding: 0.5em 0.5em;
+  margin: 0.5em 0.5em;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.red {
+  background-color: #F52549;
+}
+
+.orange {
+  background-color: #ffd64d;
+}
+
+.green {
+  background-color: #9BC01C;
+}

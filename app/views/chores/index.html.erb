@@ -1,0 +1,8 @@
+<ul>
+  <% @chores.each do |chore| %>
+    <li class=<% background_color(chore) %>>
+      <%= chore %>
+      Last done <%= chore.last_done %> 
+    </li>
+  <% end %>
+</ul>
